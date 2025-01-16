@@ -91,4 +91,7 @@ jobs:
       - name: Run RSpec tests
         env:
           RAILS_ENV: test
-        run: bin/rspec
+          JWT_SECRET_KEY: secret
+          HASHIDS_SALT: hashids_salt
+          REDIS_ENABLED: false
+        run: bundle exec rspec
