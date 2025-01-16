@@ -61,7 +61,7 @@ gem "hashids"
 
 gem "rolify"
 
-gem "dry-validation", "~> 1.10"
+gem "dry-validation", "~> 1.11"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
