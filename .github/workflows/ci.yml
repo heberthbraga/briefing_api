@@ -72,8 +72,11 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Load environment variables
-        run: source .env.test
+      - name: Set up environment variables
+        run: |
+          echo "JWT_SECRET_KEY=secret" >> .env.test
+          echo "HASHIDS_SALT=hashids_salt" >> .env.test
+          echo "REDIS_ENABLED=false" >> .env.test
 
       - name: Set up database configuration
         run: |
