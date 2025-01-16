@@ -1,0 +1,23 @@
+en:
+  errors:
+    unauthorized: "You are not authorized to access this resource."
+    messages:
+      required: "is required"
+      invalid: "is invalid"
+  dry_validation:
+    rules:
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      first_name: "First Name"
+      last_name: "Last Name"
+      account_type: "Account Type"
+    errors:
+      filled?: "must be filled"
+      min_size?: "should have at least %{num} characters"
+      included_in?: "not in the values allowed list"
+      format?: "has an invalid format"
+      key?: "must have a valid key"
+      rules:
+        password_confirmation:
+          custom?: "does not match the password value"

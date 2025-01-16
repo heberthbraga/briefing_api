@@ -1,0 +1,23 @@
+pt-BR:
+  errors:
+    unauthorized: "Você não tem permissão para acessar este recurso."
+    messages:
+      required: "é obrigatório"
+      invalid: "é inválido"
+  dry_validation:
+    rules:
+      email: "Email"
+      password: "Senha"
+      password_confirmation: "Confirmação da Senha"
+      first_name: "Primeiro Nome"
+      last_name: "Último Nome"
+      account_type: "Tipo da Conta"
+    errors:
+      filled?: "deve ser preenchido"
+      min_size?: "deve ter pelo menos %{num} caracteres"
+      included_in?: "não está em uma lista de valores permitidos"
+      format?: "tem um formato inválido"
+      key?: "deve ter uma chave válida"
+      rules:
+        password_confirmation:
+          custom?: "não coincide com o valor da senha"
