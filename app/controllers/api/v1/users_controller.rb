@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Api::V1::UsersController < ApplicationController
-
   def index
     authorize(current_user, :index?)
 

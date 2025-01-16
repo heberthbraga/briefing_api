@@ -18,7 +18,7 @@ class ValidationErrorSerializer
   def resource
     I18n.t(
       underscored_resource_name,
-      scope: [:resources],
+      scope: [ :resources ],
       locale: :en,
       default: @record.class.to_s
     )
@@ -27,7 +27,7 @@ class ValidationErrorSerializer
   def field
     I18n.t(
       @field,
-      scope: [:fields, underscored_resource_name],
+      scope: [ :fields, underscored_resource_name ],
       locale: :en,
       default: @field.to_s
     )
@@ -43,6 +43,6 @@ class ValidationErrorSerializer
   end
 
   def underscored_resource_name
-    @record.class.to_s.gsub('::', '').underscore
+    @record.class.to_s.gsub("::", "").underscore
   end
 end

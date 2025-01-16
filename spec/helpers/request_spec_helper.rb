@@ -1,5 +1,4 @@
 module RequestSpecHelper
-
   class << self
     def api_v1_path
       "/api/v1"

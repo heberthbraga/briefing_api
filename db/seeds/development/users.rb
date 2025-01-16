@@ -25,4 +25,3 @@ User.find_or_create_by(email: "product-owner@example.com") do |owner|
   owner.password_confirmation = "test1234"
   owner.add_role(:ROLE_PRODUCT_OWNER)
 end
-
